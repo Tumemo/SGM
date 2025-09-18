@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --vermelho: #e30613;
+    --preto:#000000;
+}
 *{
     margin: 0;
     padding: 0;
@@ -19,8 +23,8 @@ header{
 header nav{
     width: 100%;
     height: 100%;
-    background-color: #E30613;
-    border-bottom: 2px solid #2E2E2E;
+    background-color: var(--vermelho);
+    border-bottom: 2px solid var(--preto);
     color: white;
     display: flex;
     align-items: center;
@@ -36,6 +40,7 @@ header nav{
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        
             a{
             color: white;
             text-decoration: none;
@@ -60,8 +65,8 @@ main{
 
     }
     .botao{
-        background-color: #2E2E2E;
-        border: 2px solid #E30613;
+        background-color: var(--preto);
+        border: 2px solid var(--vermelho);
         border-radius: 10px;
         height: 4rem;
         width: 20rem;
@@ -70,9 +75,86 @@ main{
         align-items: center;
         font-weight: bold;
         font-size: 1.5rem;
+        color: white;
+        transition-duration: 0.5s;
         a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-decoration: none;
             color: white;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .botao:hover{
+        transform: scale(1.1);
+    }
+}
+.form{
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 80%;
+        gap: 1rem;
+        select, input{
+            padding: 0.5rem;
+            border-radius: 10px;
+            border: 1px solid black;
+            color: rgba(0, 0, 0, 0.395);
+            height: 20%;
+        }
+        input::placeholder{
+            color: rgba(0, 0, 0, 0.395);
+        }
+        .botao-form{
+            background-color: var(--vermelho);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 1rem;
+            font-weight: bold;
+        }
+    }
+}
+.status-chamado{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cards-processo{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-items: center;
+        .box{
+            width: 45%;
+            background-color: var(--vermelho);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .check-box{
+            height: 75%;
+            width: 5%;
+            background-color: var(--vermelho);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .date{
+            color: var(--vermelho);
         }
     }
 }

@@ -12,28 +12,39 @@
         <nav>
             <ul>
                 <li><a href="perfil.html"><i class="bi bi-person"></i></a></li>
-                <li><h1>SOLICITAÇÃO</h1></li>
-                <li><a href="index.html"><i class="bi bi-house"></i></a></li>
+                <li><h1>NOVA SOLICITAÇÃO</h1></li>
+                <li><a href="#"><i class="bi bi-gear"></i><a href="index.html"><i class="bi bi-house"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-         <section>
-            <form>
-                <label for="area">Area</label>
-                <input type="text" name="area" id="area">
-                <label for="descricao">Descrição</label>
-                <input type="text" name="descricao" id="descricao">
-                <label for="imagem">Imagem</label>
-                <input type="text" name="imagem" id="imagem">
-                <label for="registro">Registro</label>
-                <input type="text" name="registro" id="registro">
-                <label for="sug-prioridade">Sug.Prioridade</label>
-                <input type="text" name="sug-prioridade" id="sug-prioridade">
-                <label for="unidade">Unidade</label>
-                <input type="text" name="unidade" id="unidade">
-                <button type="submit">Enviar</button>
+    <main style="flex-direction: column; gap: 1rem;">
+        <h1>Detalhes do Chamado</h1>
+        <section class="form">
+             <form>
+                <select name="area" id="area">
+                    <option value="area" selected disabled hidden>Area</option>
+                    <option value="sla">sla</option>
+                </select>
+                
+                <input type="text" name="descricao" id="descricao" placeholder="Descrição do Problema">
+                 <!--ainda em desenvolvimento-->
+                <input type="text" name="imagem" id="imagem" placeholder="Adicione a Imagem">
+                
+                <select name="sug-prioridade" id="sug-prioridade">
+                    <option value="sug-prioridade" selected disabled hidden>Sugestão de Prioridade</option>
+                    <option value="Baixa">Baixa</option>
+                    <option value="Média">Média</option>
+                    <option value="Alta">Alta</option>
+                </select>
+                <select name="unidade" id="unidade">
+                    <option value="unidade" selected disabled hidden>Unidade / Local</option>
+                    <option value="senai">senai</option>
+                </select>
+                <button class="botao-form" type="submit">ENVIAR SOLICITAÇÃO</button>
             </form>
+         </section>
+         <section>
+            <div>outras Solicitação</div>
          </section>
     </main>
 </body>
