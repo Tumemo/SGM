@@ -202,6 +202,56 @@ hr{
         border-radius: 10px;
     }
 }
+.avalia{
+    height: 30dvh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.stars{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    gap: 1rem;
+}
+.star{
+    color: rgb(189, 189, 189);
+    font-size: 3rem;
+}
+.avalias{
+    height: 30dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.card-perfil{
+    height: 80%;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    p{
+        margin-top: 1rem;
+    }
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.star-avalia{
+    color: rgb(189, 189, 189);
+    font-size: 1.5rem;
+}
 @media(max-width:450px){
     .status-chamado{
     width: 100%;
@@ -279,5 +329,31 @@ hr{
         }
 
 }
+}
+.avalias{
+    height: 30dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card-perfil{
+    height: 80%;
+    width: 44%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    p{
+        margin-top: 1rem;
+    }
+}
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: .8rem;
 }
 }
